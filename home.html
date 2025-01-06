@@ -50,6 +50,10 @@
             gap: 1em;
         }
 
+        figure {
+            text-align: center;
+        }
+
         .gallery img {
             width: 100%;
             border-radius: 10px;
@@ -59,6 +63,12 @@
 
         .gallery img:hover {
             transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 0.5em;
+            font-size: 0.9rem;
+            color: #555;
         }
 
         footer {
@@ -93,10 +103,7 @@
         <section>
             <h2>Chess</h2>
             <p>
-                I enjoy playing chess because it challenges my mind and improves my strategic thinking.
-                Chess is a game of skill, patience, and creativity. It allows me to learn from my mistakes
-                and develop new strategies to improve my gameplay. I often play with friends or online,
-                and I find it both relaxing and intellectually stimulating.
+              I enjoy playing chess because it’s more than just a game—it’s a way to exercise my brain and improve my problem-solving skills. Chess teaches me to think ahead, plan carefully, and stay focused, even when things get tough. It’s a game of strategy, where every move matters, and it encourages me to be creative and come up with new ideas. I love that it pushes me to learn from my mistakes, helping me grow and get better over time. Whether I’m playing with friends or competing online, I always find chess exciting and rewarding. It’s a great way to relax, challenge myself, and have fun while keeping my mind sharp. For me, chess is not just about winning—it’s about enjoying the process and the endless possibilities on the board.
             </p>
         </section>
 
@@ -104,9 +111,18 @@
             <h3>Gallery</h3>
             <p>Here are some of my favorite chess-related images:</p>
             <div class="gallery">
-                <img src="images/Chess Board.jpg" alt="Chess Board">
-                <img src="images/Chess Pieces.jpg" alt="Chess Pieces">
-                <img src="images/Playing Chess.jpg" alt="Playing Chess">
+                <figure>
+                    <img src="images/Chess Board.jpg" alt="Chess Board">
+                    <figcaption>Chess board</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Chess Pieces.jpg" alt="Chess Pieces">
+                    <figcaption>Chess pieces</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Playing Chess.jpg" alt="Playing Chess">
+                    <figcaption>View of playing chess</figcaption>
+                </figure>
             </div>
         </section>
     </main>
@@ -117,3 +133,4 @@
 </body>
 
 </html>
+
