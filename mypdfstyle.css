@@ -1,69 +1,49 @@
-html {
-    overflow: auto;
-    font-family: sans-serif;
-    scroll-behavior: smooth; /* Smooth scrolling */
+html   {
+        overflow: auto;
+        font-family: sans-serif;
 }
 
 html,
 body,
 object {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        border: none;
 }
 
 div,
 iframe,
 object {
-    display: block;
-    width: 100%;
-    border: none;
-    overflow-y: auto;
-    overflow-x: hidden;
+        display: block;
+        width: 100%;
+        border: none;
+        overflow-y: auto;
+        overflow-x: hidden;
 }
 
 iframe {
-    height: calc(100% - 50px); /* Deduct header/footer height */
+        height: 90%;
 }
 
-div {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center navigation items */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    height: auto; /* Let the height adjust */
-    padding: 10px; /* Add padding for spacing */
-    gap: 10px; /* Add spacing between items */
+div{
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        height: 10%;
 }
 
-a {
-    color: #0000ff;
-    text-decoration: none;
-    cursor: cell;
-    transition: all 0.3s ease-in-out; /* Smooth hover transition */
+a{
+        color: #0000ff;
+        text-decoration: none;
+        cursor: cell;
 }
 
-a:visited {
-    color: #0000ff;
+a:visited{
+        color: #0000ff;
 }
 
-a:hover {
-    color: #ff0000;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle glow effect */
-    font-weight: bold;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    iframe {
-        height: 80%; /* Reduce iframe height on smaller screens */
-    }
-
-    div {
-        flex-direction: column; /* Stack links vertically */
-        align-items: flex-start; /* Align to the left */
-        height: auto;
-        gap: 5px; /* Smaller spacing between items */
-    }
+a:hover{
+        color: #ff0000;
+        text-shadow: 1px 1px #ccc;
 }
